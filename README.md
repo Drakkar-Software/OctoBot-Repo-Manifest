@@ -10,3 +10,5 @@ assumes `repo` is in your path.
 3. Init/Install OctoBot-Repo by running `repo init -u https://github.com/Drakkar-Software/OctoBot-Repo-Manifest.git`
 
 4. Synchronize repositories with `repo sync`.
+
+Also see [Documentation page](https://docs.octobot.online/pages/For-Developers.html).
