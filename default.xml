@@ -10,8 +10,8 @@
     <project path="OctoBot-Backtesting" name="OctoBot-Backtesting" remote="github" />
     <project path="OctoBot-Trading" name="OctoBot-Trading" remote="github" />
     <project path="OctoBot-Services" name="OctoBot-Services" remote="github" />
-    <project path="OctoBot-Tentacles" name="OctoBot-Tentacles" remote="github" />
-    <project path="OctoBot-Commons" name="OctoBot-Commons" remote="github" revision="dev" />
+    <project path="OctoBot-Tentacles" name="OctoBot-Tentacles" remote="github" revision="dev" />
+    <project path="OctoBot-Commons" name="OctoBot-Commons" remote="github" />
     <project path="OctoBot-Evaluators" name="OctoBot-Evaluators" remote="github"/>
     <project path="OctoBot-Tentacles-Manager" name="OctoBot-Tentacles-Manager" remote="github" />
     <project path="Async-Channel" name="Async-Channel" remote="github" />
