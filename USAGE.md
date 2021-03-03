@@ -13,6 +13,6 @@ repo forall -c git push github --set-upstream feature/add-python-3.9-to-setup.py
 Prepare new version
 ```bash
 repo forall -c 'PACKAGE=$(basename $PWD | tr - _ | sed "s/.*/\L&/"); LAST_VERSION=$(git describe --tags --abbrev=0) ; bumpversion --current-version $LAST_VERSION patch $PACKAGE/__init__.py README.md && git add README.md $PACKAGE/__init__.py'
-repo forall -c 'CHANGELOG_DATE=`date +"%Y-%m-%d"` ; LAST_VERSION=$(git describe --tags --abbrev=0) ; NEW_VERSION=$(bumpversion --current-version $LAST_VERSION patch -n --list | grep new_version | sed -r s,"^.*=",,) ; sed -i "/semver\\.org\\/spec\\/v2\\.0\\.0\\.html)\\./a \ \n## [$NEW_VERSION] - $CHANGELOG_DATE \n### Added \n- Python 3.9 support" CHANGELOG.md && git add CHANGELOG.md'
+repo forall -c 'CHANGELOG_DATE=`date +"%Y-%m-%d"` ; LAST_VERSION=$(git describe --tags --abbrev=0) ; NEW_VERSION=$(bumpversion --allow-dirty --current-version $LAST_VERSION patch -n --list | grep new_version | sed -r s,"^.*=",,) ; sed -i "/semver\\.org\\/spec\\/v2\\.0\\.0\\.html)\\./a \ \n## [$NEW_VERSION] - $CHANGELOG_DATE \n### Added \n- Python 3.9 support" CHANGELOG.md && git add CHANGELOG.md'
 repo forall -c 'LAST_VERSION=$(git describe --tags --abbrev=0) ; bumpversion --current-version $LAST_VERSION patch --commit --allow-dirty --message "[Version] {new_version}"'
 ```
