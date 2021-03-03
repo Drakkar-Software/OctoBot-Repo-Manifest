@@ -12,3 +12,5 @@ assumes `repo` is in your path.
 4. Synchronize repositories with `repo sync`.
 
 Also see [Documentation page](https://docs.octobot.online/pages/For-Developers.html).
+
+For python3 support please check https://stackoverflow.com/questions/65442731/androids-repo-tool-fails-with-python2.
